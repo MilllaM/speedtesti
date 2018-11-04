@@ -4,27 +4,49 @@
 
 body {
   font-family: "Open Sans", sans-serif;
-  background-color: #fce0d1;
+  background-color: #7E685A;
   margin: 0;
 }
 
-#score-container {
-  background-color: #69013b;
+.score-container {
+  background-color: #C2B9B0;
   color: white;
   text-align: center;
   font-size: 32px;
   padding: 20px 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+
+}
+.flex-item {
+  flex-grow: 1;
 }
 
-#button-container {
-  max-width: 1500px;
-  margin: 0 auto;
-  padding: 80px 0px;
+#start {
+  background-color: #AFD275;
+  margin-left: 40%;
+  margin-right: 40%
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  font-size: 32px;
+}
+.button-container {
+  padding: 20px 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
 }
 
 .button {
-  width: 300px;
-  height: 300px;
+  width: 250px;
+  height: 250px;
   background-color: black;
   color: white;
   float: left;
@@ -43,7 +65,7 @@ body {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.3);
-  z-index: 100;
+  z-index: 10;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -51,12 +73,12 @@ body {
 }
 
 #gameover {
-  background-color: white;
-  width: 40%;
-  height: 25%;
+  background-color: #E7717D;
+  width: 50%;
+  height: 45%;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 80px;
-  color: blue;
+  color: white;
 }

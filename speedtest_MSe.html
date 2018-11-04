@@ -5,14 +5,21 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-    <title>ViPan pallot</title>
+    <title>SpeedTest</title>
     <link href="style.css" rel="stylesheet">
 </head>
 
 <body>
     <main>
-        <div id="score-container">Tulos: <span id="score">0</span></div>
-        <div id="button-container">
+        <div class="score-container">
+          <div class="flex-item">
+          <button id="start" onclick="gameStart()">Start the game!</button></div>
+          <div class="flex-item">
+          <p>Highest score: <span id="hiscore">0</span></p>
+          <p>Score: <span id="score">0</span></p></div>
+        </div>
+
+        <div class="button-container">
             <div class="button" id="button0"></div>
             <div class="button" id="button1"></div>
             <div class="button" id="button2"></div>
